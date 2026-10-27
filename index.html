@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>калькулятор</title>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div>
     <div class="calculator">
-        <h1> калькулятор</h1>
-        <input type="text" id="display">
-
-        <div class="button>"
-            <button class="clear wibe">C</button>
+    <h1>Калькулятор</h1>
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+     <button class="clear wide" onclick="clarAll()">C</button>
+            <button class="operator">/</button>
+ 
+            <button onclick="pressDigit('7')">7</button>
+            <button onclick="pressDigit('8')">8</button>
+            <button onclick="pressDigit('9')">9</button>
             <button class="operator">*</button>
+ 
+            <button onclick="pressDigit('4')">4</button>
+            <button onclick="pressDigit('5')">5</button>
+            <button onclick="pressDigit('6')">6</button>
             <button class="operator">-</button>
+ 
+            <button onclick="pressDigit('1')">1</button>
+            <button onclick="pressDigit('2')">2</button>
+            <button onclick="pressDigit('3')">3</button>
             <button class="operator">+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="wibe">0</button>
-            <button class="equals">=</button>
-    </div>
-    </div>
+ 
+            <button class="wide" onclick="pressDigit('0')">0</button>
+            <button class="equals" onclick="calculate()">=</button>
+</div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
